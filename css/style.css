@@ -1,8 +1,229 @@
-body{
+/* global style */
+body,
+h3,
+h2,
+p{
     margin: 0;
     font-family: sans-serif;
+    color:#333;
+}
+img{
+    width: 100%;
 }
 .container{
     width: 90%;
     margin: auto;
+}
+.float-fix{
+    clear: both;
+}
+/* nav-bar */
+#nav-bar{
+    background-color: #F5F3FF;
+    padding: 16px 24px;
+    height: 40px;
+    
+}
+
+#nav-bar .logo{
+float: left;
+color: #333;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+}
+#nav-bar .nav-links{
+float: right;
+list-style: none;
+}
+.nav-links li{
+display: inline-block;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+.nav-links li a:hover{
+    color: #7F49FE;
+}
+
+/* home */
+#home{
+    padding: 90px 0;
+background-color: #fff;
+}
+ .home-img{
+    width: 45%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.home-img img{
+  border-radius: 20px;
+  width: 100%;
+  height: 500px;
+}
+#home .home-info{
+    width: 45%;
+    float: left;
+    padding-left: 5%;
+}
+#home .home-info .details span{
+   display: inline-block;
+    margin-right: 10px;
+    padding: 3px 10px;
+    background-color: #A684FF;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+#home .home-info h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+#home .home-info h2 span{
+    color: #7F49FE;
+}
+#home .home-info p{
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #333;
+    margin: 10px 0;
+}
+#home .home-info .price span{
+      display: inline-block;
+    margin-right: 10px;
+}
+.home-info .price span.now{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.home-info .price span.old{
+  text-decoration: line-through;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.home-info .price span.discount{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #e7000b;
+    padding: 3px 10px;
+    background-color: #FFE2E2;
+    border-radius: 20px;
+}
+.home-info h4{
+    font-size: 16;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.home-info .buttons .add-to-cart{
+     display: block;
+    width: 100%;
+    margin: 20px 0;
+padding: 15px 0;
+background-color:#7F49FE ;
+border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+border: 2px solid #7F49FE;
+
+}
+.home-info .buttons .Add-to-Wishlist{
+     display: block;
+    width: 100%;
+    margin: 20px 0;
+padding: 15px 0;
+background-color:#fff ;
+border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000;
+    border: 2px solid #ddd;
+    
+}
+/* Specifications */
+#specifications{
+    padding: 90px 0;
+    background-color: #F7F5FF;
+}
+#specifications .specifications-info{
+text-align: center;
+}
+.specifications-info h2{
+font-size: 36px;
+line-height: 40px;
+font-weight: 700;
+}
+.specifications-info h2 span{
+color: #7F49FE;
+}
+.specifications-info p{
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.compare{
+        border-radius: 15px;
+         border: 3px solid #ddd;
+         margin-top: 50px ;
+
+
+}
+.compare table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fff;
+            border-radius: 15px;
+
+}
+ .compare table tr{
+    border-bottom: 1px solid #ddd;
+}
+.compare table tr span{
+    padding: 3px 10px;
+    background-color: #A684FF;
+    color: #fff;
+    border-radius: 20px;
+}
+.compare th{
+    padding: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+
+}
+.compare td:nth-child(2),
+.compare th:nth-child(2){
+    background-color: #A684FF;
+    border-radius: 20px;
+}
+.compare th p{
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.compare td{
+    padding: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 }
